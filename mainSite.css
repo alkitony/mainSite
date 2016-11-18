@@ -1,0 +1,128 @@
+html {
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p, div, header a {
+    font-family: 'Noto Serif';
+}
+
+body {
+    background: #4B79A1;
+    background: -webkit-linear-gradient(left top, #4B79A1 , #283E51);
+    background: linear-gradient(left top, #4B79A1 , #283E51); 
+}
+
+.well {
+    margin-left: 1.6%;
+    margin-right: 1.6%;
+    margin-top: 2%;
+    text-align: center;
+    background-color: rgba(238, 238, 238, 0.80);
+    font-variant: small-caps;
+}
+
+.well h1 {
+    margin-top: 1%
+}
+.well p {
+    font-variant: normal;
+    margin: 15px 10px;
+    font-size: 1.25em;
+}
+
+.gridsys {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.glyphicon-size {
+    height: 20px;
+    font-size: 30px;
+    text-decoration: none;
+    width: auto;
+}
+
+.social-links p {
+    position: relative;
+    display: table;
+    margin: 10px auto 0;
+}
+
+.social-links a {
+    display: table-cell;
+    height: 40px;
+    vertical-align: top;
+    width: 60px;
+}
+.social-links a:hover,
+.social-links a:active,
+.social-links a:focus {
+    text-decoration: none;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.10), 
+                                                rgba(0, 0, 0, 0.50), 
+                                                rgba(0, 0, 0, 0.75), 
+                                                rgba(0, 0, 0, 0.50), 
+                                                rgba(0, 0, 0, 0.10));
+    margin-top: 0;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 4%;
+}
+
+.thumbnail {
+    position: relative;
+    padding: 0 1.6%;
+    margin: 0 1.65%;
+    height: 250px;
+    border: 0;
+}
+
+h4 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 991px) {
+    .gridsys .thumbnail {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .gridsys .thumbnail {
+        margin-bottom: 3%;
+        /*height: px;*/
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .gridsys .thumbnail p {
+        font-size: 1.3em;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .gridsys .thumbnail {
+        margin-bottom: 3%;
+        height: 350px;
+        /*height: px;*/
+    }
+}
+
+
+.move-bottom-size {
+    position: absolute;
+    bottom: 0;
+    font-size: 1.2em;
+    padding-bottom: 15px;
+}
+
+.move-right {
+    right: 15px;
+}
