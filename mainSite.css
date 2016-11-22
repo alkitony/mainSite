@@ -1,38 +1,96 @@
+@font-face {
+    font-family: 'TradeGothic';
+    src: url("font/TradeGothicLTStd-BdCn20.otf") format("opentype");
+    font-weight: normal;
+}
+
 html {
     height: 100%;
 }
 
-h1, h2, h3, h4, h5, h6, p, div, header a {
-    font-family: 'Noto Serif';
+h1, h3 {
+    text-transform: uppercase;
+    font-family: 'TradeGothic';
+    font-size: 32px;
+    letter-spacing: -0.75px;
 }
+h2, h4 {
+    text-transform: uppercase;
+    font-family: 'TradeGothic';
+    font-size: 1.5em;
+    /*letter-spacing: -0.75px;*/
+}
+
+p, div, header a {
+    font-family: 'Didact Gothic';
+    /*letter-spacing: 0.75px;*/
+}
+
 
 body {
-    background: #4B79A1;
-    background: -webkit-linear-gradient(left top, #4B79A1 , #283E51);
-    background: linear-gradient(left top, #4B79A1 , #283E51); 
+    background: #000;
 }
 
+a { 
+    color: #ddd;
+}
+p > a {
+    text-decoration: underline;
+}
+a:hover, a:focus {
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+}
+
+.deep-bottom-space {
+    padding-bottom: 20px;
+}
+
+.heading h1,
+.heading h2 {
+    margin: 0;
+}
+.heading {
+    margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 995px) {
+    .heading {
+        text-align: left;
+        margin-bottom: 0;
+    }
+    .social-links {
+        text-align: right;
+    }
+}
 .well {
     margin-left: 1.6%;
     margin-right: 1.6%;
-    margin-top: 2%;
+    margin-top: 1%;
+    margin-bottom: 1%;
     text-align: center;
-    background-color: rgba(238, 238, 238, 0.80);
+    background-color: #0f445d;
+    border: none;
     font-variant: small-caps;
+    color: white;
 }
 
 .well h1 {
     margin-top: 1%
 }
+
 .well p {
     font-variant: normal;
-    margin: 15px 10px;
+    margin: 10px 10px;
     font-size: 1.25em;
 }
 
+.well-sm {
+    padding: 19px 0 0;
+    background-color: #0f445d;
+}
+
 .gridsys {
-    display: flex;
-    flex-wrap: wrap;
     margin: 0;
 }
 
@@ -43,13 +101,12 @@ body {
     width: auto;
 }
 
-.social-links p {
-    position: relative;
-    display: table;
+.social-links li {
+    display: inline-block;
     margin: 10px auto 0;
 }
 
-.social-links a {
+.social-links li a {
     display: table-cell;
     height: 40px;
     vertical-align: top;
@@ -78,43 +135,29 @@ hr {
 .thumbnail {
     position: relative;
     padding: 0 1.6%;
-    margin: 0 1.65%;
-    height: 250px;
+    margin-bottom: 0;
+    min-height: 330px;
     border: 0;
+    border-radius: 0;
+    color: #000;
 }
-
-h4 {
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-@media only screen and (min-width: 991px) {
-    .gridsys .thumbnail {
-        width: 30%;
+    .thumbnail.yelpcamp a {
+        color: #337ab7;
     }
-}
-
-@media only screen and (max-width: 991px) {
-    .gridsys .thumbnail {
-        margin-bottom: 3%;
-        /*height: px;*/
+    .thumbnail.colorgame a {}
+    .thumbnail.keyboardplay a {
+        color: #337ab7;
     }
-}
-
-@media only screen and (max-width: 991px) {
-    .gridsys .thumbnail p {
-        font-size: 1.3em;
+    .thumbnail .move-bottom-size {
+        font-family: 'TradeGothic';
+        font-size: 1.5em;
+        text-transform: uppercase;
     }
-}
 
-@media only screen and (max-width: 420px) {
-    .gridsys .thumbnail {
-        margin-bottom: 3%;
-        height: 350px;
-        /*height: px;*/
-    }
+.colorgame {
+    background-color: rgb(70, 130, 180);
+    color: white;
 }
-
 
 .move-bottom-size {
     position: absolute;
@@ -125,4 +168,24 @@ h4 {
 
 .move-right {
     right: 15px;
+}
+
+@media only screen and (max-width: 995px) {
+    .thumbnail {
+        margin-bottom: 3%;
+        min-height: 240px;
+    }
+}
+
+@media only screen and (max-width: 995px) {
+    .gridsys .thumbnail p {
+        font-size: 1.3em;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .gridsys .thumbnail {
+        margin-bottom: 3%;
+        height: 350px;
+    }
 }
