@@ -170,6 +170,21 @@ hr {
     right: 15px;
 }
 
+footer {
+   bottom: 0;
+   height: 30px;
+   width: 100%;
+   color: rgb(256, 256, 256);
+   text-align: center;
+   margin: auto auto;
+}
+footer p {
+   margin: 5px 0;
+}
+footer p a {
+   color: blue;
+}
+
 @media only screen and (max-width: 995px) {
     .thumbnail {
         margin-bottom: 3%;
