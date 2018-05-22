@@ -64,9 +64,9 @@ a:hover, a:focus {
     }
 }
 .well {
-    margin-left: 1.6%;
-    margin-right: 1.6%;
-    margin-top: 1%;
+    /*margin-left: 1.6%;*/
+    /*margin-right: 1.6%;*/
+    /*margin-top: 1%;*/
     margin-bottom: 1%;
     text-align: center;
     background-color: #0f445d;
@@ -81,7 +81,7 @@ a:hover, a:focus {
 
 .well p {
     font-variant: normal;
-    margin: 10px 10px;
+    margin: 3px 3px;
     font-size: 1.25em;
 }
 
@@ -134,7 +134,7 @@ hr {
 
 .thumbnail {
     position: relative;
-    padding: 0 1.6%;
+    /*padding: 0 1.6%;*/
     margin-bottom: 0;
     min-height: 330px;
     border: 0;
@@ -144,7 +144,6 @@ hr {
     .thumbnail.yelpcamp a {
         color: #337ab7;
     }
-    .thumbnail.colorgame a {}
     .thumbnail.keyboardplay a {
         color: #337ab7;
     }
@@ -163,7 +162,8 @@ hr {
     position: absolute;
     bottom: 0;
     font-size: 1.2em;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
+    padding-left: 10px;
 }
 
 .move-right {
